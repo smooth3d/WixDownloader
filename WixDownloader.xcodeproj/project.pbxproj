@@ -24,7 +24,6 @@
 		6676BDCD18335444004A463B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6676BDD018335444004A463B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6676BDF118336BD8004A463B /* pwned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pwned.png; path = Resources/pwned.png; sourceTree = "<group>"; };
-		6676BDF718336E6E004A463B /* WixDownloader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WixDownloader.entitlements; sourceTree = "<group>"; };
 		6676BDF818336EA0004A463B /* wix.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = wix.icns; path = ../wix.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +73,6 @@
 				6676BDCD18335444004A463B /* AppDelegate.m */,
 				6676BDCF18335444004A463B /* MainMenu.xib */,
 				6676BDC218335444004A463B /* Info.plist */,
-				6676BDF718336E6E004A463B /* WixDownloader.entitlements */,
 			);
 			path = WixDownloader;
 			sourceTree = "<group>";
@@ -120,7 +118,7 @@
 					6676BDB618335444004A463B = {
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -253,7 +251,6 @@
 		6676BDE918335444004A463B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = WixDownloader/WixDownloader.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -268,7 +265,6 @@
 		6676BDEA18335444004A463B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = WixDownloader/WixDownloader.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
